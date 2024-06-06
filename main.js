@@ -1,17 +1,20 @@
+let boxDom = document.getElementById('box');
+
 for (let i = 1; i <= 100; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
+        boxDom.append("FizzBuzz");
 
     } else if (i % 3 === 0) {
-        console.log("Fizz");
+        boxDom.append("Fizz");
 
     } else if (i % 5 === 0) {
-        console.log("Buzz");
+        boxDom.append("Buzz");
 
     } else {
-        console.log(i);
+        boxDom.append(i);
     }
+
 }
 
 
